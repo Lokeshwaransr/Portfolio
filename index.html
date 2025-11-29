@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lokeshwaran's Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+<body>
+    <!-- Header -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">LOKESHWARAN S</div>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-title">About Me</div>
+        <div class="about-content">
+          <div class="profile-image-container">
+            <img src="img/Pic.png" alt="LOKESH" class="profile-image" />
+          </div>
+          <div class="about-text">
+            <h2>Hello, I'm LOKESHWARAN S</h2>
+            <p class="subtitle">Backend Developer | Web Developer</p>
+            <p>
+             Adept Frontend Developer skilled in HTML, CSS, and JavaScript, with hands-on experience building responsive
+and user-friendly interfaces. Proficient in React for developing dynamic web applications. Passionate about
+creating clean, efficient, and visually appealing solutions that enhance user experience.
+            </p>
+            <p>
+              I'm also exploring prompt engineering to better utilize AI tools like ChatGPT, combining traditional
+              development skills with emerging AI technologies to create more efficient and intelligent solutions.
+            </p>
+            <a href="resume.html" class="btn primary-btn">View Resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-title">My Skills</div>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Programming Languages</h3>
+            <div class="skill-item"><div class="skill-name">Java</div></div>
+            <div class="skill-item"><div class="skill-name">C (Basics)</div></div>
+            <div class="skill-item"><div class="skill-name">Python (Basics)</div></div>
+          </div>
+          <div class="skill-category">
+            <h3>Databases</h3>
+            <div class="skill-item"><div class="skill-name">SQL</div></div>
+            <div class="skill-item"><div class="skill-name">MongoDB (Basics)</div></div>
+          </div>
+          <div class="skill-category">
+            <h3>Web Development</h3>
+            <div class="skill-item"><div class="skill-name">HTML</div></div>
+            <div class="skill-item"><div class="skill-name">CSS</div></div>
+            <div class="skill-item"><div class="skill-name">JavaScript</div></div>
+          </div>
+          <div class="skill-category">
+            <h3>Soft Skills</h3>
+            <div class="skill-item"><div class="skill-name">Problem Solving</div></div>
+            <div class="skill-item"><div class="skill-name">Decision Making</div></div>
+            <div class="skill-item"><div class="skill-name">Leadership</div></div>
+            <div class="skill-item"><div class="skill-name">Teamwork</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <section id="projects" class="section projects-section">
+  <div class="container">
+    <div class="section-title">My Projects</div>
+
+    <!-- CRUD Form -->
+    <div class="crud-box">
+      <input type="text" id="projTitle" placeholder="Project Title">
+      <input type="file" id="projImg" accept="image/*">
+      <textarea id="projDesc" placeholder="Project Description"></textarea>
+      <button class="btn primary-btn" onclick="addProject()">Add Project</button>
+    </div>
+
+    <!-- Dynamic Cards -->
+    <div id="projectCards" class="projects-grid"></div>
+  </div>
+</section>
+
+
+
+    <hr />
+
+   <section id="achievements" class="section achievements-section">
+  <div class="container">
+    <div class="section-title">Achievements</div>
+
+    <div class="crud-box">
+      <input type="text" id="achTitle" placeholder="Achievement Title">
+      <input type="file" id="achImg" accept="image/*">
+      <button class="btn primary-btn" onclick="addAchievement()">Add</button>
+    </div>
+
+    <div id="achievementCards" class="projects-grid"></div>
+  </div>
+</section>
+
+
+
+    <hr />
+
+    <!-- Contact Section -->
+<section id="contact" class="section contact-section">
+  <div class="container">
+    <div class="section-title">Contact Me</div>
+
+    <div class="contact-links">
+
+      <!-- Email -->
+      <a href="mailto:lokeshwaransr7@gmail.com" class="contact-card">
+        <i class="fa-solid fa-envelope icon"></i>
+        <span>Email</span>
+      </a>
+
+      <!-- GitHub -->
+      <a href="https://github.com/Lokeshwaransr" target="_blank" class="contact-card">
+        <i class="fa-brands fa-github icon"></i>
+        <span>GitHub</span>
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/lokeshwaran-s-754645355" target="_blank" class="contact-card">
+        <i class="fa-brands fa-linkedin icon"></i>
+        <span>LinkedIn</span>
+      </a>
+
+    </div>
+
+    <div class="get-in-touch">
+      <p>Let's work together on your next project!</p>
+      <a href="mailto:lokeshwaransr7@gmail.com" class="btn primary-btn">Get In Touch</a>
+    </div>
+
+  </div>
+</section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 lokesh. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <!-- MODAL POPUP -->
+<div id="viewModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modalImg" src="">
+    <h2 id="modalTitle"></h2>
+    <p id="modalDesc"></p>
+  </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

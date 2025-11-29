@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MyResume</title>
+  <meta name="description" content="Resume of Abishek B" />
+  <style>
+    /* Full-viewport PDF */
+    html, body {
+      height: 100%;
+      margin: 0;
+      background: #0b1a2b; /* subtle dark blue backdrop while loading */
+    }
+    .frame {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      background: #fff;
+    }
+    /* Optional: better print */
+    @media print {
+      .frame { height: 100vh; }
+    }
+    /* Minimal fallback link styling (only shown if iframe fails) */
+    .fallback {
+      position: fixed;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      color: #fff;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      text-align: center;
+      padding: 2rem;
+    }
+    .fallback a {
+      color: #8ec5ff;
+      text-underline-offset: 3px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Update the src path to your actual PDF -->
+  <iframe
+    class="frame"
+    src="img/Resume.pdf"
+    title="Abishek B — Resume PDF"
+    loading="eager"
+  ></iframe>
+</body>
+</html>
